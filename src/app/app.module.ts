@@ -8,6 +8,8 @@ import { StudentComponent } from './student/student.component';
 import { InstructorComponent } from './instructor/instructor.component';
 import { AircraftsComponent } from './aircrafts/aircrafts.component';
 import { SidePanelComponent } from './side-panel/side-panel.component';
+import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
     StudentComponent,
     InstructorComponent,
     AircraftsComponent,
-    SidePanelComponent
+    SidePanelComponent,
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
