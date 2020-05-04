@@ -2,11 +2,24 @@
   .form-control{
     width: 400px;
   }
+  .navbar{
+    position: fixed;
+    width: 100%;
+  }
+
+  .box{
+    position: fixed;
+    top: 5px;
+    right: 15px;
+  }
 </style>
 
 <nav class="navbar navbar-light bg-white">
-  <form class="form-inline left">
+  <form class="form-inline left w-100">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
   </form>
+  <div class="box">
+    <a class="right"><img src="../../assets/img/avatar.png" alt="" height="" width="40"></a>
+  </div>
 </nav>

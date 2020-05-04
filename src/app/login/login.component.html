@@ -1,3 +1,96 @@
-<p>
-  login works!
-</p>
+<style>
+  .container.login{
+    border-radius: 25px;
+    margin: 10% auto;
+    display: block;
+    width:40%;
+    text-align:center;
+    background-color: white;
+  }
+
+  .container.register{
+    border-radius: 25px;
+    margin: 10% auto;
+    display: block;
+    width:30%;
+    text-align:center;
+    background-color: white;
+  }
+
+  .alert {
+    max-width: 50%;
+  }
+
+  .new-link{
+    color: #0082b8 !important;
+    background-color: transparent !important;
+    border-color: #0082b8 !important;
+  }
+
+  .new-link.btn:hover{
+    color: white !important;
+    background-color: #0082b8 !important;
+  }
+
+  .login .btn:hover{
+    color: white !important;
+  }
+
+  .box-container{
+    border-radius: 25px;
+    margin: 10% auto;
+    display: block;
+    width:40%;
+    text-align:center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 50px;
+  }
+
+  .textBox{
+    height: 30px;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .btn{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #0082b8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+</style>
+
+
+<div class="container login shadow">
+  <div class="text-center py-4">
+    <a class="pb-4 pt-3"><img src="../../assets/img/ifligh.png" alt="" height="" width="200"></a>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <form th:action="@{/login}" method="post">
+        <div class="form-group font-weight-light text-left">
+          <label for="username">Username</label><br>
+          <input class="textBox mx-0" type="text" id="username" name="username" autofocus="autofocus"/>
+        </div>
+        <div class="form-group font-weight-light text-left">
+          <label for="password">Password</label><br>
+          <input class="textBox mx-0" type="password" id="password" name="password"/>
+        </div>
+        <div class="login text-center">
+          <input class="btn font-weight-medium" id="submit" type="submit" value="Log in"/>
+        </div>
+      </form>
+      <span th:if="${error}" class="text-warning text-center" th:text="${error}"></span>
+      <span th:if="${message}" class="text-warning text-center" th:text="${message}"></span>
+
+      <div class="text-center font-weight-light pb-4">
+        <label>Don't have an account</label>
+        <a href="/Notes/register">Register</a>
+      </div>
+    </div>
+  </div>
+</div>
