@@ -8,6 +8,16 @@
       font-family: 'Roboto', sans-serif;
     }
 
+    .font-bold{
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      color: #00699a;
+    }
+
+    .font-size-small{
+      font-size: 12px;
+    }
+
     .sidenav {
       height: 100%;
       width: 200px;
@@ -31,6 +41,20 @@
       color: #03bcd2;
     }
 
+    i{
+      color: #03bcd2;
+    }
+
+    .contact{
+      position: absolute;
+      bottom: 10px;
+    }
+
+    .web{
+      font-size: 14px;
+      color: #03bcd2;
+    }
+
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
@@ -39,9 +63,17 @@
 </head>
 <div class="sidenav font-regular">
   <a class="pb-4 pt-3"><img src="../../assets/img/ifligh.png" alt="" height="" width="100"></a>
-  <a href="#">Dashboard</a>
-  <a href="#">Student</a>
-  <a href="#">Instructor</a>
-  <a href="#">Aircraft</a>
+  <a href="#"><i class="fa fa-th-large fa-fw" aria-hidden="true"></i><span class="pl-3">Dashboard</span></a>
+  <a href="#"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i><span class="pl-3">Student</span></a>
+  <a href="#"><i class="fa fa-leanpub fa-fw" aria-hidden="true"></i><span class="pl-3">Instructor</span></a>
+  <a href="#"><i class="fa fa-plane fa-fw" aria-hidden="true"></i><span class="pl-3">Aircraft</span></a>
+
+  <div class="contact pl-3">
+    <div class="pb-3"><i class="fa fa-volume-control-phone fa-lg" aria-hidden="true"></i><span class="pl-3 font-bold">Support</span></div>
+    <div class="font-size-small pb-1">supportdesk@iflighttrain.com</div>
+    <div class="pb-3 font-size-small">+94112947590</div>
+    <div class="pb-2 font-size-small web">www.iflighttrain.com</div>
+
+  </div>
 </div>
 
