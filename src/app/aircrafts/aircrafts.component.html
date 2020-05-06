@@ -1,5 +1,5 @@
 <style>
-  button{
+  button {
     height: 22px;
     font-size: 12px;
     background-color: #03bcd2;
@@ -7,81 +7,83 @@
     border: none;
   }
 
-  h4 button{
+  h4 button {
     float: right;
     background-color: white;
     color: #00699a;
     border: 1px solid #00699a;
   }
 
-  button.okay{
+  button.okay {
     height: 30px;
     width: 100px;
     font-size: 14px;
   }
 
-  button.bt2{
+  button.bt2 {
     height: 30px;
     font-size: 14px;
   }
 
-  .container.pop-up{
+  .container.pop-up {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     top: 100px;
+    display: none;
   }
 </style>
 
 <div class="container shadow-sm bg-white p-3">
-  <h4 class="pb-3">Aircraft Availability<button class="mr-5 mt-2" type="button" onclick="alert('')">View More Details</button></h4>
-      <table style="width:100%">
-        <tr class="border-bottom">
-          <th class="pb-2">Registration Number</th>
-          <th class="pb-2">Aircraft Type</th>
-          <th class="pb-2">Remaining Hours</th>
-          <th class="pb-2">Hours remaining for maintenance</th>
-        </tr>
-        <tr>
-          <td class="pt-2">4R-TDA</td>
-          <td class="pt-2">C152</td>
-          <td class="pt-2">Available</td>
-          <td class="pt-2">56</td>
-          <td class="pt-2"><button type="button" onclick="alert('')">View More Details</button></td>
-        </tr>
-        <tr>
-          <td>4R-TDA</td>
-          <td>C152</td>
-          <td>Available</td>
-          <td>56</td>
-          <td><button type="button" onclick="alert('')">View More Details</button></td>
-        </tr>
-        <tr>
-          <td>4R-TDA</td>
-          <td>C152</td>
-          <td>Available</td>
-          <td>56</td>
-          <td><button type="button" onclick="alert('')">View More Details</button></td>
-        </tr>
-        <tr>
-          <td>4R-TDA</td>
-          <td>C152</td>
-          <td>Available</td>
-          <td>56</td>
-          <td><button type="button" onclick="alert('')">View More Details</button></td>
-        </tr>
+  <h4 class="pb-3">Aircraft Availability<button class="mr-5 mt-2" type="button" onclick="alert('')">View More
+      Details</button></h4>
+  <table style="width:100%">
+    <tr class="border-bottom">
+      <th class="pb-2">Registration Number</th>
+      <th class="pb-2">Aircraft Type</th>
+      <th class="pb-2">Remaining Hours</th>
+      <th class="pb-2">Hours remaining for maintenance</th>
+    </tr>
+    <tr>
+      <td class="pt-2">4R-TDA</td>
+      <td class="pt-2">C152</td>
+      <td class="pt-2">Available</td>
+      <td class="pt-2">56</td>
+      <td class="pt-2"><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td>4R-TDA</td>
+      <td>C152</td>
+      <td>Available</td>
+      <td>56</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td>4R-TDA</td>
+      <td>C152</td>
+      <td>Available</td>
+      <td>56</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td>4R-TDA</td>
+      <td>C152</td>
+      <td>Available</td>
+      <td>56</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
 
-      </table>
-    </div>
+  </table>
+</div>
 
-<div class="container shadow-lg bg-white p-3 w-75 pop-up">
+<div class="container shadow-lg bg-white p-3 w-75 pop-up" id="pop-up">
   <h4 class="text-center pb-3">Aircraft Details</h4>
   <table style="width:100%">
     <tr>
       <td class="pt-2">Aircraft Type</td>
-      <td  class="pt-2">C152</td>
+      <td class="pt-2">C152</td>
     </tr>
     <tr>
       <td>Registration Number</td>
@@ -109,7 +111,14 @@
     </tr>
     <tr>
       <td>&nbsp;</td>
-      <td><button class="okay" type="button" onclick="alert('')">Okay</button><button class="bt2 ml-2" type="button" onclick="alert('')">Add for Maintenance</button></td>
+      <td><button class="okay" type="button" (click)="close_pop_up($event)">Okay</button>
+        <button class="bt2 ml-2" type="button" (click)="add_pop_up($event)">Add for Maintenance</button></td>
+    </tr>
+    <tr *ngIf="added">
+      <td>
+        &nbsp;
+      </td>
+      <td> Succesfully Added</td>
     </tr>
   </table>
 </div>
