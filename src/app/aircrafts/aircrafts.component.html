@@ -13,6 +13,26 @@
     color: #00699a;
     border: 1px solid #00699a;
   }
+
+  button.okay{
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+  }
+
+  button.bt2{
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .container.pop-up{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
 </style>
 
 <div class="container shadow-sm bg-white p-3">
@@ -56,3 +76,40 @@
       </table>
     </div>
 
+<div class="container shadow-sm bg-white p-3 w-75 pop-up">
+  <h4 class="text-center pb-3">Aircraft Details</h4>
+  <table style="width:100%">
+    <tr>
+      <td class="pt-2">Aircraft Type</td>
+      <td  class="pt-2">C152</td>
+    </tr>
+    <tr>
+      <td>Registration Number</td>
+      <td>4R-TDA</td>
+    </tr>
+    <tr>
+      <td>Last Maintenance Check Date</td>
+      <td>25/3/2020</td>
+    </tr>
+    <tr>
+      <td>Maintenance Check completed</td>
+      <td>50 Hourly</td>
+    </tr>
+    <tr>
+      <td>Hours remaining for next Maintenance</td>
+      <td>45hrs</td>
+    </tr>
+    <tr>
+      <td>Maintenance approved Engineer</td>
+      <td>B.C.H. Perera</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><button class="okay" type="button" onclick="alert('')">Okay</button><button class="bt2 ml-2" type="button" onclick="alert('')">Add for Maintenance</button></td>
+    </tr>
+  </table>
+</div>

@@ -3,6 +3,16 @@
     color: #03bcd2;
   }
 
+  .color-dark-blue{
+    color: #00699a;
+  }
+
+  button.okay{
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+  }
+
   button{
     height: 22px;
     font-size: 12px;
@@ -17,9 +27,19 @@
     color: #00699a;
     border: 1px solid #00699a;
   }
+
+  .container.pop-up{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+
+  }
 </style>
 
-<div class="container shadow-sm bg-white p-3 mt-3">
+<div class="container shadow-sm bg-white p-3">
   <h4 class="pb-3">Student Details<button class="mr-5 mt-2" type="button" onclick="alert('')">View More Details</button></h4>
       <table style="width:100%">
         <tr class="border-bottom pb-3">
@@ -65,3 +85,73 @@
         </tr>
       </table>
     </div>
+
+<div class="container shadow-sm bg-white p-3 w-75 pop-up">
+  <h4 class="text-center pb-3">Student Details</h4>
+  <table style="width:100%">
+    <tr>
+      <td class="pt-2">Name</td>
+      <td  class="pt-2">Agampodi Anuruddi Imesha Mendis</td>
+    </tr>
+    <tr>
+      <td>Date Of Birth</td>
+      <td>1994-01-16</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>26 yrs</td>
+    </tr>
+    <tr>
+      <td>Licence No.</td>
+      <td>PPL/A/932</td>
+    </tr>
+    <tr>
+      <td>NIC No.</td>
+      <td>199451601833</td>
+    </tr>
+    <tr>
+      <td>Mobile Number</td>
+      <td>0777072663</td>
+    </tr>
+    <tr>
+      <td>Emergency contact No</td>
+      <td>0773632800</td>
+    </tr>
+    <tr>
+      <td>Flying Hours completed</td>
+      <td>200hrs</td>
+    </tr>
+    <tr>
+      <td>Available Flying hours</td>
+      <td>5hrs<i class="fa fa-plus-circle color-dark-blue px-2" aria-hidden="true"></i><u>Add More hours</u></td>
+    </tr>
+    <tr>
+      <td>Assigned Instructor</td>
+      <td>Mr. Travis Fuhrmann<i class="fa fa-pencil-square-o color-dark-blue px-2" aria-hidden="true"></i><u>Change Instructor</u></td>
+    </tr>
+    <tr>
+      <td>Ground School</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>License Expiration date</td>
+      <td>20/11/2020</td>
+    </tr>
+    <tr>
+      <td>NIB Clearance Expiration</td>
+      <td>12/08/2020</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-file color-dark-blue pr-2" aria-hidden="true"></i><u>View Student Progress Report</u></td>
+      <td><button class="okay" type="button" onclick="alert('')">Okay</button></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-leanpub fa-fw color-dark-blue pr-2" aria-hidden="true"></i><u>View Pending Lessons</u></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
