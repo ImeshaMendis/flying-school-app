@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'instructor',  component: InstructorComponent },
   { path: 'aircraft',  component: AircraftsComponent },
   { path: 'dashboard',  component: DashboardComponent },
-  // { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
