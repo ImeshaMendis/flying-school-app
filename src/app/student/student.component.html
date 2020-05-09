@@ -1,19 +1,19 @@
 <style>
-  .color-blue{
+  .color-blue {
     color: #03bcd2;
   }
 
-  .color-dark-blue{
+  .color-dark-blue {
     color: #00699a;
   }
 
-  button.okay{
+  button.okay {
     height: 30px;
     width: 100px;
     font-size: 14px;
   }
 
-  button{
+  button {
     height: 22px;
     font-size: 12px;
     background-color: #03bcd2;
@@ -21,14 +21,14 @@
     border: none;
   }
 
-  h4 button{
+  h4 button {
     float: right;
     background-color: white;
     color: #00699a;
     border: 1px solid #00699a;
   }
 
-  .container.pop-up{
+  .container.pop-up {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -39,7 +39,7 @@
 
   }
 
-  button.button-circle{
+  button.button-circle {
     background-color: transparent;
     font-size: 16px;
     outline: none;
@@ -47,58 +47,59 @@
 </style>
 
 <div class="container shadow-sm bg-white p-3">
-  <h4 class="pb-3">Student Details<button class="mr-5 mt-2" type="button" (click)="open_pop_up($event)">View More Details</button></h4>
-      <table style="width:100%">
-        <tr class="border-bottom pb-3">
-          <th class="pb-2">Student Name</th>
-          <th class="pb-2">License Category</th>
-          <th class="pb-2">Remaining Hours</th>
-          <th class="pb-2">Mobile No</th>
-        </tr>
-        <tr>
-          <td class="pt-2"><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>Jill</td>
-          <td  class="pt-2">Smith</td>
-          <td  class="pt-2">50</td>
-          <td  class="pt-2">0771111111</td>
-          <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-          <td>0771111111</td>
-          <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>John</td>
-          <td>Doe</td>
-          <td>80</td>
-          <td>0771111111</td>
-          <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>John</td>
-          <td>Doe</td>
-          <td>80</td>
-          <td>0771111111</td>
-          <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>John</td>
-          <td>Doe</td>
-          <td>80</td>
-          <td>0771111111</td>
-          <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
-        </tr>
-      </table>
-    </div>
+  <h4 class="pb-3">Student Details<button class="mr-5 mt-2" type="button" (click)="open_pop_up($event)">View More
+      Details</button></h4>
+  <table style="width:100%">
+    <tr class="border-bottom pb-3">
+      <th class="pb-2">Student Name</th>
+      <th class="pb-2">License Category</th>
+      <th class="pb-2">Remaining Hours</th>
+      <th class="pb-2">Mobile No</th>
+    </tr>
+    <tr>
+      <td class="pt-2"><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>Jill</td>
+      <td class="pt-2">Smith</td>
+      <td class="pt-2">50</td>
+      <td class="pt-2">0771111111</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>0771111111</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>John</td>
+      <td>Doe</td>
+      <td>80</td>
+      <td>0771111111</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>John</td>
+      <td>Doe</td>
+      <td>80</td>
+      <td>0771111111</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-user-circle pr-2 color-blue" aria-hidden="true"></i>John</td>
+      <td>Doe</td>
+      <td>80</td>
+      <td>0771111111</td>
+      <td><button type="button" (click)="open_pop_up($event)">View More Details</button></td>
+    </tr>
+  </table>
+</div>
 
 <div class="container shadow-lg bg-white p-3 w-75 pop-up" id="pop-up">
   <h4 class="text-center pb-3">Student Details</h4>
   <table style="width:100%">
     <tr>
       <td class="pt-2">Name</td>
-      <td  class="pt-2">Agampodi Anuruddi Imesha Mendis</td>
+      <td class="pt-2">Agampodi Anuruddi Imesha Mendis</td>
     </tr>
     <tr>
       <td>Date Of Birth</td>
@@ -130,11 +131,13 @@
     </tr>
     <tr>
       <td>Available Flying hours</td>
-      <td>5hrs<button class="button-circle" type="button"><i class="fa fa-plus-circle color-dark-blue px-2" aria-hidden="true"></i></button><u>Add More hours</u></td>
+      <td>{{flyingHours}}<button class="button-circle" type="button"><i class="fa fa-plus-circle color-dark-blue px-2"
+            aria-hidden="true" (click)="add_flying_hours()"></i></button></td>
     </tr>
     <tr>
       <td>Assigned Instructor</td>
-      <td>Mr. Travis Fuhrmann<i class="fa fa-pencil-square-o color-dark-blue px-2" aria-hidden="true"></i><u>Change Instructor</u></td>
+      <td>Mr. Travis Fuhrmann<i class="fa fa-pencil-square-o color-dark-blue px-2" aria-hidden="true"></i><u>Change
+          Instructor</u></td>
     </tr>
     <tr>
       <td>Ground School</td>

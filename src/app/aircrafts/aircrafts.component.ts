@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AircraftsComponent implements OnInit {
   added : boolean;
+  avalability = 'Available';
   constructor() { }
 
   ngOnInit() {
@@ -21,5 +22,7 @@ export class AircraftsComponent implements OnInit {
   }
   add_pop_up(event:any) {
     this.added = true;
+    this.avalability = 'Unavailable'
   }
+
 }

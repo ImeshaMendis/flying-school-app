@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
   added : boolean;
+  flyingHours = 24;
   constructor() { }
 
   ngOnInit() {
@@ -18,5 +19,8 @@ export class StudentComponent implements OnInit {
   open_pop_up(event:any) {
     this.added = false;
     document.getElementById("pop-up").style.display = "block";
+  }
+  add_flying_hours(){
+    this.flyingHours = this.flyingHours + 5;
   }
 }
